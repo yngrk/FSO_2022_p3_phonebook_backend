@@ -1,0 +1,33 @@
+# get info page
+GET http://localhost:3001/info
+
+###
+
+# get all persons
+GET http://localhost:3001/api/persons/
+
+###
+
+# get one person of id 2
+GET http://localhost:3001/api/persons/2
+
+###
+
+# get one person of id that does not exist
+GET http://localhost:3001/api/persons/5
+
+###
+
+# delete one person
+DELETE http://localhost:3001/api/persons/1
+
+###
+
+# add new Person to database
+POST http://localhost:3001/api/persons/
+Content-Type: application/json
+
+{
+  "name": "Artosius Hellas",
+  "number": "123-123-123"
+}
