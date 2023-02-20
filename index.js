@@ -1,7 +1,8 @@
 const express = require("express");
 const morgan = require("morgan");
+const cors = require("cors");
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(
@@ -18,6 +19,8 @@ app.use(
     ].join(" ");
   })
 );
+app.use(cors());
+app.use(express.static("build"));
 
 let persons = [
   {
@@ -65,7 +68,7 @@ app.post("/api/persons", (request, response) => {
   };
 
   persons = [...persons, newPerson];
-  response.status(204).send();
+  response.status(201).json(newPerson);
 });
 
 app.get("/info", (request, response) => {
