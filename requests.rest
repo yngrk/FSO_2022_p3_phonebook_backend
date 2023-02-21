@@ -9,7 +9,7 @@ GET http://localhost:3001/api/persons/
 ###
 
 # get one person of id 2
-GET http://localhost:3001/api/persons/2
+GET http://localhost:3001/api/persons/63f4a55a600312fa70f2b323
 
 ###
 
@@ -19,7 +19,7 @@ GET http://localhost:3001/api/persons/5
 ###
 
 # delete one person
-DELETE http://localhost:3001/api/persons/1
+DELETE http://localhost:3001/api/persons/63f4a6050224f1d1d82a7ce4
 
 ###
 
@@ -28,6 +28,6 @@ POST http://localhost:3001/api/persons/
 Content-Type: application/json
 
 {
-  "name": "Artosius Hellas",
+  "name": "Artosius Hellasius",
   "number": "123-123-123"
 }
