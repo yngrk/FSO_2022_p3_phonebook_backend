@@ -28,6 +28,6 @@ POST http://localhost:3001/api/persons/
 Content-Type: application/json
 
 {
-  "name": "Artosius Hellasius",
-  "number": "123-123-123"
+  "name": "Artosius Hellaswwwius",
+  "number": "123-123-124-55"
 }
